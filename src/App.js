@@ -1,7 +1,17 @@
+import { Navbar, Footer } from "./containers/components";
+import { TopNews, LocalNews, Market } from "./containers";
 import "./App.css";
 
 function App() {
-  return <div className="App">Hello World</div>;
+  return (
+    <>
+      <Navbar />
+      <TopNews />
+      <Market />
+      <LocalNews />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

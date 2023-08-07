@@ -1,4 +1,4 @@
-import { Navbar, Footer } from "./containers/components";
+import { Navbar, Footer } from "./components";
 import { TopNews, LocalNews, Market } from "./containers";
 import "./App.css";
 

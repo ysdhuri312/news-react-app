@@ -23,7 +23,7 @@ const Navbar = () => {
     <>
       <div
         id="primary-nav"
-        className="tracking-wide flex justify-between items-center px-[7%] py-[1.5rem]"
+        className="tracking-wide flex justify-between items-center px-[7%] py-[0.7rem]"
       >
         <h1 className="text-2xl opacity-90 uppercase font-extrabold font-cursive">
           News24
@@ -33,23 +33,23 @@ const Navbar = () => {
             <AiOutlineSearch />
           </div>
           <input
-            className="xl:px-48 py-2 rounded-full text-2xl text-center tracking-wider shadow-md focus:outline-none opacity-70 lg:px-25"
+            className="xl:px-48 py-2 rounded-full text-xl text-center tracking-wide shadow-md focus:outline-none opacity-70 lg:px-25"
             type="text"
             placeholder="Search"
           />
         </div>
-        <div className="flex gap-4 text-3xl opacity-60">
+        <div className="flex gap-4 text-3xl opacity-60 hover:opacity-50 cursor-pointer">
           <AiOutlineQuestionCircle />
           <AiOutlineSetting />
         </div>
       </div>
       <div
         id="secondary-nav"
-        className="flex justify-between items-center px-[7%] border-b-2 py-2 mb-2 rounded-lg"
+        className="flex justify-between items-center px-[7%] border-b-2 pt-8 pb-2 mb-4 rounded-lg "
       >
         {navlinks.map((navlink, index) => (
           <ul key={index}>
-            <li className="opacity-70">{navlink}</li>
+            <li className="opacity-70 cursor-pointer hover:opacity-50">{navlink}</li>
           </ul>
         ))}
       </div>
